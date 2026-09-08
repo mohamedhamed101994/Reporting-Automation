@@ -1,10 +1,12 @@
 # Reporting-Automation
-Reporting Automation using python to check the new reports, validate and load it to SQL 
+Reporting Automation using python to check the new reports, validate and load it to SQL.
 
-# Reporting Automation
 
-An automated data validation and reporting pipeline built with
-Python, SQL Server, and Power BI.
+
+# Instructions
+1- use sql script to create the datebase and stg table
+2- open env file to update you SQL connection
+3- run the automation script and enjjjjooooy 
 
 ## Project Overview
 
@@ -21,14 +23,16 @@ validating, processing, and reporting business data.
 
 ## Workflow
 
-                    Received Files
-                          ↓
-                    Data Validation
-                          ↓
-Data Processing           or              File Rejected
-     ↓                                         ↓
-SQL Server                            Generate an Errors log file 
-    ↓
-Reporting
-    ↓
- Power BI
+<div>
+<div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Received Files</div>
+<div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&darr;</div>
+<div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Data Validation</div>
+<div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&darr;</div>
+<div>Data Processing&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;or&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;File Rejected</div>
+<div>&nbsp; &nbsp; &nbsp;&darr;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &darr;</div>
+<div>SQL Server&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Generate an Errors log file</div>
+<div>&nbsp; &nbsp; &nbsp;&darr;</div>
+<div>Reporting</div>
+<div>&nbsp; &nbsp; &nbsp;&darr;</div>
+<div>&nbsp;Power BI</div>
+</div>

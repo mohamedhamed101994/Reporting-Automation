@@ -3,19 +3,21 @@ import pandas as pd
 from pathlib import Path
 import shutil
 from sqlalchemy import create_engine , text
+from dotenv import load_dotenv
+import os
 
 
-
+load_dotenv()
 
 # =============================================
 # SQL connection
 
 
-SERVER = r"localhost\SQLEXPRESS"
+SERVER = os.getenv("SERVER")
 
-DATABASE = "Reporting_DB"
+DATABASE = os.getenv("DATABASE")
 
-DRIVER = "ODBC Driver 17 for SQL Server"
+DRIVER = os.getenv("DRIVER")
 
 CONNECTION_STRING = (
     f"mssql+pyodbc://@{SERVER}/{DATABASE}"
@@ -31,9 +33,7 @@ engine = create_engine(
 # project file path
 
 
-BASE_FOLDER = Path(
-    r"D:\.Me\Education\DA Projects\Reporting Automation"
-)
+BASE_FOLDER = Path(__file__).parent
 
 
 RECEIVED_FOLDER = BASE_FOLDER / "1-Received"
@@ -93,7 +93,7 @@ def validate_data(df):
     if errors:
         return False, errors
 
-    return True, errors
+    return True, errors 
 
 # get all csv files from received folder
 csv_files = list(
